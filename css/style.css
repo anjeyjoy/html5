@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    background: #cdcdcd url('../img/body-bg.png');
+}
+#wrapper {
+	width: 100%;
+	max-width: 960px;
+	margin: auto;
+}
+section {
+    margin: auto;
+    padding: 0 10px;
+    font-family: sans-serif;
+}
+.logo-holder {
+	overflow: hidden;
+	margin: auto;
+}
+.logo {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: #0d47a1;
+	margin: 10px 0 10px 10px;
+	float: left;
+	position: relative;
+}
+.logo span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	color: #fff;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 48px;
+	font-weight: bold;
+}
+.logo-holder>code {
+	color: #0d47a1;
+	font-size: 48px;
+	display: block;
+	margin-top: 32px;
+}
+ul {
+    list-style: none;
+}
+li {
+    display: block;
+    text-align: left;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.categories>li {
+    position: relative;
+    transition: all 0.5s;
+    border: 1px solid #0d47a1;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.tags>li {
+	padding: 0;
+}
+h4 {
+    font: 18px/24px sans-serif;
+    color: #0d47a1;
+}
+h5 {
+    display: block;
+    text-align: center;
+    padding: 5px;
+    color: #0d47a1;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+h6 {
+    color: #0d47a1;
+}
+article li {
+    font: 14px/18px sans-serif;
+    margin-bottom: 5px;
+    color: #555;
+}
+article h5 code {
+	font-size: 24px;
+}
+article code {
+	font-size: 14px;
+	font-weight: bold;
+	color: #0d47a1;
+}
+.tags {
+    display: none;
+}
+.article-body {
+	display: none;
+	padding-bottom: 10px;
+	position: relative;
+}
+.article-body:after {
+	position: absolute;
+	content: "";
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%);
+	width: 80%;
+	height: 1px;
+	background: #0d47a1;
+}
+.visio {
+	background: rgba(255, 255, 255, 0.6);
+}
+p {
+    font: 16px/24px 'PT Sans Narrow', sans-serif;
+}
+@media screen and (min-width: 640px) {
+    section, .logo-holder {
+        width: 480px;
+    }
+}
+@media screen and (min-width: 960px) {
+    section {
+        width: 80%;
+        font: 16px/18px sans-serif;
+    }
+    .logo-holder {
+    	width: 80%;
+    }
+}
+@media screen and (min-width: 1024px) {
+    section, .logo-holder {
+        width: 60%;
+    }
+}
