@@ -66,6 +66,30 @@ body{
 #nav-toggle.active span:after {
     transform: rotate(-45deg);
 }
+.search {
+    float: right;
+ }
+.open-search {
+    margin-left: 0 !important;
+    transition: all 1s ease-out;
+}
+.search input[type="search"] {
+    margin: 10px 10px 10px -9999px;
+    width: 120px;
+    padding: 0 10px;
+    height: 30px;
+    float: left;
+}
+.search-button {
+    display: inline-block;
+    margin: 15px 10px 15px 0;
+    width: 20px;
+    height: 20px;
+    border-width: 0;
+    outline: none;
+    background: url(../img/search-icon.png);
+    background-size: cover;
+}
 section {
     margin: auto;
     padding: 0 10px;

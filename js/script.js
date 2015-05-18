@@ -27,4 +27,7 @@ $(document).ready(function () {
     $( "#nav-toggle" ).click(function() {
         this.classList.toggle( "active" );
     });
+    $(".search-button").click(function () {
+        $("input[type='search']").toggleClass("open-search");
+    } );
 } );
